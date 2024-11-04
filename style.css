@@ -13,7 +13,11 @@ body
 h1
 {
     font-family:Coolvetica;
-    color:white;
+}
+
+p
+{
+    font-family: Helvetica, sans-serif;
 }
 
 .header {
@@ -28,8 +32,8 @@ h1
     margin: 0;
     padding-top:0px;
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-family: Coolvetica;
+    font-size: 15px;
 }
 
 .navbar ul
@@ -38,7 +42,7 @@ h1
     margin: 0;
     padding: 0;
     background-color: rgb(0,0,0);
-    width: 200px;
+    width: 250px;
 }
 
 .navbar ul li a
@@ -49,10 +53,25 @@ h1
     display: block;
     font-family: Coolvetica;
     text-decoration: none;
+    color:rgb(192, 42, 92);
+    font-size: 20px;
 }
 
 .navbar ul li a:hover
 {
     transition: 0.5s;
     color: white;
+}
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p
+{
+    font-size: 12px;
+    color:gray;
 }
