@@ -1,0 +1,58 @@
+body
+{
+    margin:0px;
+    padding: 0px;
+    background-color: rgb(30,30,30);
+}
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(coolvetica\ rg.otf);
+}
+
+h1
+{
+    font-family:Coolvetica;
+    color:white;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: none;
+    justify-content: center;
+}
+.header p
+{
+    margin: 0;
+    padding-top:0px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.navbar ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0,0,0);
+    width: 200px;
+}
+
+.navbar ul li a
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: block;
+    font-family: Coolvetica;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover
+{
+    transition: 0.5s;
+    color: white;
+}
