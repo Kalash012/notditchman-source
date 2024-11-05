@@ -75,7 +75,7 @@ ul li {
 ul li a {
     padding: 10px;
     font-family: Coolvetica;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     color: rgb(234, 0, 255);
     display: block;
@@ -84,6 +84,16 @@ ul li a {
 ul li a:hover {
     transition: 0.3s;
     color: white;
+}
+
+.title{
+    text-align: center;
+}
+
+h2
+{
+    color:white;
+    font-family:Coolvetica;
 }
 
 @media(max-width:900px) 
@@ -107,5 +117,10 @@ ul li a:hover {
     {
         width: 70%;
         margin: 0px;
+    }
+
+    h2 
+    {
+        font-size: 19px;
     }
 }
