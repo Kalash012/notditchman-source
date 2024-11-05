@@ -11,7 +11,7 @@ body {
 
 @font-face {
     font-family: Coolvetica;
-    src: url(coolvetica/rg.otf); /* Correct file path */
+    src: url(coolvetica.otf);
 }
 
 h1 {
@@ -27,10 +27,10 @@ h3 {
 
 p {
     font-family: Helvetica, sans-serif;
-    color: white;
+    color: rgb(76, 76, 76);
     margin: 0px;
     padding: 0px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 a {
@@ -43,7 +43,7 @@ a {
 }
 
 .main {
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(31, 31, 31);
     padding: 20px;
     display: flex; /* Use flexbox to center content */
     flex-direction: column; /* Stack elements vertically */
@@ -58,13 +58,17 @@ a {
 }
 
 ul {
-    background-color: black;
+    background-color: rgb(22, 22, 22);
     margin: 0px;
     list-style-type: none;
+    border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 40px;
 }
 
 ul li {
     margin-bottom: 10px; /* Space between menu items */
+    text-align: left;
 }
 
 ul li a {
@@ -77,5 +81,30 @@ ul li a {
 }
 
 ul li a:hover {
+    transition: 0.3s;
     color: white;
+}
+
+@media(max-width:900px) 
+{
+    .main{
+        padding: 10px;
+        width: 90%;
+    }
+    .main img
+    {
+        width: 90%;
+        height: auto;
+    }
+
+    .navimg
+    {
+        width: 100%;
+    }
+
+    ul
+    {
+        width: 70%;
+        margin: 0px;
+    }
 }
