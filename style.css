@@ -1,13 +1,13 @@
 body {
     background-image: url(websitebackgroundgradient.jpg);
-    background-size: cover; /* Ensures the image fully covers the viewport */
+    background-size: cover;
     background-color: rgb(22,22,22);
-    background-position: center; /* Keeps the image centered in the viewport */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    height: 100vh; /* Full height of the viewport */
-    margin: 0; /* Removes default body margin */
+    min-height: 100vh;
+    margin: 0;
 }
 
 @font-face {
@@ -28,7 +28,7 @@ h3 {
 
 p {
     font-family: Helvetica, sans-serif;
-    color: rgb(76, 76, 76);
+    color: rgb(155, 155, 155);
     margin: 0px;
     padding: 0px;
     font-size: 12px;
@@ -46,15 +46,15 @@ a {
 .main {
     background-color: rgb(31, 31, 31);
     padding: 20px;
-    display: flex; /* Use flexbox to center content */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center all elements horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
 }
 
 .centered-icon {
-    display: block; /* Make the image a block-level element */
-    margin: 0 auto; /* Center the image horizontally */
+    display: block;
+    margin: 0 auto;
     border-radius: 10px;
 }
 
@@ -65,10 +65,11 @@ ul {
     border-radius: 5px;
     padding-left: 0px;
     padding-right: 40px;
+    width: 70%;
 }
 
 ul li {
-    margin-bottom: 10px; /* Space between menu items */
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -96,10 +97,52 @@ h2
     font-family:Coolvetica;
 }
 
+.maintext
+{
+    background-color: rgb(49, 49, 49);
+    vertical-align: top;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.maintext h1
+{
+    color:white;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.maintext p
+{
+    text-align: center;
+    color: rgb(167, 167, 167);
+    font-size: 15px;
+    padding: 20px;
+}
+
+.maintext img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.special-row
+{
+    vertical-align: top;
+}
+
+.maintext a {
+    display: block;       /* Makes the link a block element */
+    text-align: center;   /* Centers the text inside the link */
+    margin: 10px auto;    /* Centers the link by applying auto margins */
+    width: fit-content;   /* Ensures the link width adjusts to the content */
+}
+
+
 @media(max-width:900px) 
 {
     .main{
-        padding: 10px;
         width: 90%;
     }
     .main img
@@ -122,5 +165,16 @@ h2
     h2 
     {
         font-size: 19px;
+    }
+
+    .maintext h1
+    {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .maintext p
+    {
+        font-size: 12px;
     }
 }
