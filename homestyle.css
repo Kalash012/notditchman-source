@@ -51,14 +51,15 @@ li a {
     display: block;
     color: rgb(240,241,255);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 25px;
     text-decoration: none;
     font-family: coolvetica;
     font-weight: 60;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 li a:hover {
+    background-color: rgb(50, 50, 60);
     color: rgb(199, 199, 255);
 }
 
@@ -66,16 +67,56 @@ body{
     background-color: rgb(27, 27, 30);
 }
 
-.main{
-    width: 100%;
-    height: 90%;
-    background-image: url(https://media1.tenor.com/m/iq4EysFjtSAAAAAd/homer-homer-simpson.gif);
+.featured {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Push the star to the center and button to the bottom */
+    align-items: center; /* Center items horizontally */
+    background-image: url(https://gifdb.com/images/high/intense-animated-war-ghgm0r8mukgie5nn.gif);
     background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    padding: 20px 0; /* Optional: Add some spacing */
+}
+
+.featured img {
+    max-width: 100px; /* Ensure the star maintains its size */
+}
+
+.featured button {
+    padding: 10px 20px;
+    background-color: rgb(35, 35, 41);
+    border: none;
+    border-radius: 8px; /* Rounded corners for the button */
+    font-family: "coolvetica", sans-serif;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.featured button a {
+    text-decoration: none;
+    color: inherit; /* Match button text color */
+}
+
+.featured button:hover {
+    background-color: rgb(50, 50, 60);
+    color: rgb(199, 199, 255);
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 699px) {
+    .featured img {
+        max-width: 80px; /* Smaller star image for smaller screens */
+    }
+
+    .featured button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
 
 /* mobile view */
