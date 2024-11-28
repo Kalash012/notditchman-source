@@ -137,4 +137,8 @@ body{
         font-size: 15px;
         padding: 10px 12px; /* Adjust padding for smaller screens */
     }
+
+    .middlething{
+        width:0%;
+    }
 }
