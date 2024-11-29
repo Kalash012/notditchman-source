@@ -2,6 +2,7 @@ body
 {
     margin:0;
     padding: 0;
+    background-color: rgb(16, 16, 23);
 }
 
 td {
@@ -41,7 +42,6 @@ p{
 ul {
     list-style-type: none;
     margin: 0;
-    padding-right: 30px;
     display: flex; /* Use flexbox for horizontal layout */
     overflow: hidden;
     flex-wrap: nowrap; /* Prevent wrapping of list items */
@@ -55,7 +55,7 @@ li a {
     text-decoration: none;
     font-family: coolvetica;
     font-weight: 60;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 li a:hover {
@@ -63,16 +63,12 @@ li a:hover {
     color: rgb(199, 199, 255);
 }
 
-body{
-    background-color: rgb(27, 27, 30);
-}
-
 .featured {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     justify-content: space-between; /* Push the star to the center and button to the bottom */
     align-items: center; /* Center items horizontally */
-    background-image: url(https://gifdb.com/images/high/intense-animated-war-ghgm0r8mukgie5nn.gif);
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHJkZGZlZDFybXdhOW4yNDAxZHg3enFkcHpqbmx5ZXBtMXA0Y2l1aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0DAFYhRQfjpHIZri/giphy.webp);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -120,8 +116,8 @@ body{
     }
 
     .featured button {
-        font-size: 14px;
-        padding: 8px 16px;
+        font-size: 24px;
+        padding: 12px 100px;
     }
 
     .featured{
